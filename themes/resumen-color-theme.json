@@ -1,0 +1,91 @@
+{
+    "name": "resumen-color-theme",
+    "colors": {
+        "editor.background": "#383c4a",
+        "editor.lineHighlightBorder": "#383c4a"
+    },
+    "tokenColors": [
+        {
+            "name": "Resumen Titulo",
+            "scope": "title.resumen",
+            "settings": {
+                "foreground": "#C77E77",
+                "fontStyle": "bold underline"
+            }
+        },
+        {
+            "name": "Resumen Subtitulo",
+            "scope": "subtitle.resumen",
+            "settings": {
+                "foreground": "#bbbb77",
+                "fontStyle": "bold underline"
+            }
+        },
+        {
+            "name": "Resumen Destacado",
+            "scope": "highlight.resumen",
+            "settings": {
+                "foreground": "#98ff46",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Resumen Brillante",
+            "scope": "glowing.resumen",
+            "settings": {
+                "foreground": "#bfff00",
+                "fontStyle": "bold italic"
+            }
+        },
+        {
+            "name": "Resumen Subrayado",
+            "scope": "underline.resumen",
+            "settings": {
+                "foreground": "#a5f99e",
+                "fontStyle": "italic underline"
+            }
+        },
+        {
+            "name": "Resumen Bullets",
+            "scope": "bullets.resumen",
+            "settings": {
+                "foreground": "#06cdcd"
+            }
+        },
+        {
+            "name": "Resumen Implicacion",
+            "scope": "implication.resumen",
+            "settings": {
+                "foreground": "#4398f0"
+            }
+        },
+        {
+            "name": "Resumen Tabla",
+            "scope": "table.resumen",
+            "settings": {
+                "foreground": "#4398f0"
+            }
+        },
+        {
+            "name": "Resumen Separador",
+            "scope": "separator.resumen",
+            "settings": {
+                "foreground": "#9e79d0"
+            }
+        },
+        {
+            "name": "Resumen Bloque Codigo",
+            "scope": "codeblock.resumen",
+            "settings": {
+                "foreground": "#9e79d0"
+            }
+        },
+        {
+            "name": "Resumen Limites",
+            "scope": "delim.resumen",
+            "settings": {
+                "foreground": "#555555"
+            }
+        }
+    ]
+}

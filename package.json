@@ -1,0 +1,54 @@
+{
+  "name": "resumen-syntax",
+  "displayName": "Resumen Syntax",
+  "description": "Una sintaxis para escribir resumenes.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRodriguezPardo/Resumen_Syntax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GRodriguezPardo/Resumen_Syntax/issues"
+  },
+  "homepage": "https://github.com/GRodriguezPardo/Resumen_Syntax#readme",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "resumen",
+        "aliases": [
+          "Resumen",
+          "resumen"
+        ],
+        "extensions": [
+          ".txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "resumen",
+        "scopeName": "source.resumen",
+        "path": "./syntaxes/resumen.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Resumen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/resumen-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

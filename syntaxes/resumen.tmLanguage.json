@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/refs/heads/master/tmlanguage.json",
+  "fileTypes": [
+    "txt"
+  ],
+  "scopeName": "source.resumen",
+  "patterns": [
+    {
+      "name": "delim.resumen",
+      "begin": "\"(?=[^\n\"]*\")",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "highlight.resumen",
+          "match": "[^\"\\n]*"
+        }
+      ]
+    },
+    {
+      "name": "delim.resumen",
+      "begin": "(\\x27)(?=[^\\x27\n]*\\x27)",
+      "end": "\\x27",
+      "patterns": [
+        {
+          "name": "glowing.resumen",
+          "match": "[^\\x27\\n]*"
+        }
+      ]
+    },
+    {
+      "name": "delim.resumen",
+      "begin": "```\\n(?=[^(```\\n)]*```)\"",
+      "end": "```",
+      "patterns": [
+        {
+          "name": "codeblock.resumen",
+          "match": "[^(```\\n)]*"
+        }
+      ]
+    },
+    {
+      "name": "delim.resumen",
+      "begin": "\\*(?=[a-zA-Z0-9]+([ ]*[a-zA-Z0-9]+)*\\*)",
+      "end": "\\*",
+      "patterns": [
+        {
+          "match": "[a-zA-Z0-9]+([ ]*[a-zA-Z0-9]+)*",
+          "name": "underline.resumen"
+        }
+      ]
+    },
+    {
+      "name": "bullets.resumen",
+      "match": "(?<= )(-|\\+|[0-9]+\\)|I+\\)|#|±)(?= )"
+    },
+    {
+      "name": "implication.resumen",
+      "match": "(?<= )(<|)(-|--|=|==)(>|)(?= )"
+    },
+    {
+      "name": "title.resumen",
+      "match": "(?<![^\n])[A-Z_.Ñ][A-Z_.Ñ1-9 ][A-Z_.Ñ1-9 ]+(?=\\n)"
+    },
+    {
+      "name": "table.resumen",
+      "match": "(--[-+]*\\+)|\\|"
+    },
+    {
+      "name": "separator.resumen",
+      "match": "--+"
+    },
+    {
+      "name": "subtitle.resumen",
+      "match": "[^\\n\"\\047]+:(?=\\n)"
+    },
+    {
+      "name": "table.resumen",
+      "match": "--[-+]*\\+"
+    },
+    {
+      "name": "bullets.resumen",
+      "match": "[\\+\\-=\\*/]"
+    }
+  ]
+}
