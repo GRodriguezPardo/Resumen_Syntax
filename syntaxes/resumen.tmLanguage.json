@@ -71,7 +71,11 @@
     },
     {
       "name": "subtitle.resumen",
-      "match": "[^\\n\"\\047]+:(?=\\n)"
+      "match": "[^\\n\"\\047]+(?=:\\n)"
+    },
+    {
+      "name": "delim.resumen",
+      "match": "(?<=[^\\n\"\\047]+):(?=\\n)"
     },
     {
       "name": "table.resumen",

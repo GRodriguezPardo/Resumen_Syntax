@@ -1,8 +1,35 @@
 {
     "name": "resumen-color-theme",
     "colors": {
-        "editor.background": "#383c4a",
-        "editor.lineHighlightBorder": "#383c4a"
+      "activityBar.background": "#1A242B",
+      "activityBar.foreground": "#FFEED6",
+      "button.background": "#4A7183",
+      "commandCenter.background": "#28313D",
+      "dropdown.background": "#2E3947",
+      "dropdown.listBackground": "#23303A",
+      "editor.background": "#2E3947",
+      "editor.foreground": "#eeeeff",
+      "editor.lineHighlightBorder": "#2E3447",
+      "editor.selectionBackground": "#344B54",
+      "editorGroupHeader.tabsBackground": "#1D2931",
+      "focusBorder": "#344B54",
+      "input.background": "#262E39",
+      "inputOption.activeBorder": "#1370F3",
+      "list.hoverBackground": "#344B54",
+      "list.inactiveSelectionBackground": "#263742",
+      "menu.background": "#3d474f",
+      "menu.selectionBackground": "#344B54",
+      "panel.background": "#262E39",
+      "quickInput.background": "#23303A",
+      "quickInputList.focusBackground": "#415D69",
+      "quickInputTitle.background": "#2C3F47",
+      "sideBar.background": "#1D2931",
+      "sideBarSectionHeader.background": "#415D69",
+      "sideBarTitle.background": "#1D2931",
+      "statusBar.background": "#283F4F",
+      "statusBarItem.remoteBackground": "#274A63",
+      "tab.inactiveBackground": "#262E39",
+      "titleBar.activeBackground": "#1D2931"
     },
     "tokenColors": [
         {
@@ -19,6 +46,14 @@
             "settings": {
                 "foreground": "#bbbb77",
                 "fontStyle": "bold underline"
+            }
+        },
+        {
+            "name": "Final Resumen Subtitulo",
+            "scope": "end.subtitle.resumen",
+            "settings": {
+                "foreground": "#bbbb77",
+                "fontStyle": "bold"
             }
         },
         {
@@ -84,7 +119,7 @@
             "name": "Resumen Limites",
             "scope": "delim.resumen",
             "settings": {
-                "foreground": "#555555"
+                "foreground": "#3D4C5E"
             }
         }
     ]
